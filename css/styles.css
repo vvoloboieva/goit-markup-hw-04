@@ -165,10 +165,9 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("/images/hero-banner.jpg");
+    url("../images/hero-banner.jpg");
   background-position: 50% 50%;
   background-repeat: no-repeat;
-
   padding: 188px 0;
 }
 
