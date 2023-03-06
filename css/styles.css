@@ -280,7 +280,7 @@ img {
   background-color: var(--primary);
   width: 40px;
   height: 40px;
-  border-radius: 40px;
+  border-radius: 50%;
   padding: 12px;
   display: block;
 }
@@ -304,20 +304,35 @@ img {
   display: inline-block;
 }
 
+.feature::before {
+  content: "";
+  display: block;
+  height: 112px;
+  margin-bottom: 8px;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--light);
+}
+
+.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.astranaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .feature-text {
   margin-top: 8px;
-}
-
-.feature-icons {
-  background-color: var(--light);
-  padding: 24px 100px;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.feature-icon {
-  width: 64px;
-  height: 64px;
 }
 
 .customers-list {
@@ -331,9 +346,11 @@ img {
   border: 1px solid var(--l-slate);
   border-radius: 4px;
   padding: 16px 32px;
+  display: block;
 }
 
-.customer-item:hover {
+.customer-item:hover,
+.customer-item:focus {
   --color3: var(--pressed);
   border: 1px solid var(--pressed);
 }
@@ -341,10 +358,6 @@ img {
 .customer-icon {
   width: 104px;
   height: 56px;
-}
-
-.customer-icon:hover {
-  fill: var(--color3);
 }
 
 .feature-text,
