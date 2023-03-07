@@ -103,6 +103,19 @@ img {
   letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .main-menu {
   display: flex;
   list-style: none;
@@ -304,31 +317,16 @@ img {
   display: inline-block;
 }
 
-.feature::before {
-  content: "";
-  display: block;
-  height: 112px;
-  margin-bottom: 8px;
-  background-size: auto;
-  background-position: center;
-  background-repeat: no-repeat;
+.feature-icons {
   background-color: var(--light);
+  padding: 24px 100px;
+  display: block;
+  margin-bottom: 8px;
 }
 
-.antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.astranaut::before {
-  background-image: url(../images/astronaut.svg);
+.feature-icon {
+  width: 64px;
+  height: 64px;
 }
 
 .feature-text {
