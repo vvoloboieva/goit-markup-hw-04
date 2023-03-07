@@ -184,7 +184,7 @@ img {
   padding: 188px 0;
 }
 
-.hero > .title1 {
+.hero .title1 {
   color: white;
   text-align: center;
   width: 496px;
